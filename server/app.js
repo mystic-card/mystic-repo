@@ -4,6 +4,8 @@ if (process.env.NODE_ENV !== "production") {
 
 const express = require("express");
 const AuthController = require("./controllers/AuthController");
+const RoomController = require("./controllers/RoomController");
+const authentication = require("./middlewares/authentication");
 const cors = require("cors");
 
 const app = express();
@@ -19,5 +21,11 @@ app.post("/login", AuthController.login);
 
 // User register using email & password
 app.post("/register", AuthController.register);
+
+// Auth middleware
+app.use(authentication);
+
+// User create game room
+app.post("/room", RoomController.createRoom);
 
 module.exports = app;
