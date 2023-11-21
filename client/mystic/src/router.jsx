@@ -1,7 +1,15 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, redirect } from "react-router-dom";
 import { Login } from "./views/Login";
 import { Register } from "./views/Register";
 import { Home } from "./views/Home";
+
+function loginChecked() {
+  if (!localStorage.access_token) {
+    return redirect("/login");
+  }
+
+  return null;
+}
 
 const router = createBrowserRouter([
   {
@@ -15,6 +23,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+    loader: loginChecked,
   },
 ]);
 
