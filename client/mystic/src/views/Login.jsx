@@ -11,7 +11,7 @@ export function Login() {
         }}
       >
         <div className="rounded-xl bg-gray-800 bg-opacity-50 px-16 py-10 shadow-lg backdrop-blur-md max-sm:px-8">
-          <div className="text-white">
+          <div className="text-white"> 
             <div className="mb-8 flex flex-col items-center">
               <img
                 src="ml-logo.png"
