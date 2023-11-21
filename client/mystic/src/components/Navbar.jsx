@@ -1,6 +1,21 @@
 import React from "react";
+import { Link, useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 
 export function Navbar() {
+  const navigate = useNavigate();
+
+  function Logout() {
+    localStorage.clear();
+
+    Swal.fire({
+      title: "Logout Success!",
+      text: "See you again!",
+      icon: "success",
+    });
+    navigate("/");
+  }
+
   return (
     <>
       <div className="w-full container mx-auto">
@@ -15,16 +30,16 @@ export function Navbar() {
             </span>
           </a>
           <div className="flex w-1/2 justify-end content-center">
-            <a
+            <Link
               className="inline-block text-blue-300 no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
-              href="https://www.facebook.com/sharer/sharer.php?u=#"
+              onClick={Logout}
             >
               <img
                 src="/logout.png"
                 className="fill-current h-6"
                 viewBox="0 0 32 32"
               />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

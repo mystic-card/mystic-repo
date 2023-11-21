@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 
 export function Register() {
   const navigate = useNavigate();
@@ -129,7 +130,7 @@ export function Register() {
                   type="submit"
                   className="rounded-3xl bg-purple-600 bg-opacity-50 px-10 py-2 text-white shadow-xl backdrop-blur-md transition-colors duration-300 hover:bg-purple-600"
                 >
-                  Login
+                  Sign In
                 </button>
               </div>
               <div class="text-center text-purple-600 hover:underline hover:text-gray-100 py-5">
