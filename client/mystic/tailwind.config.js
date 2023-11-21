@@ -4,7 +4,12 @@ export default {
     './pages/**/*.{html,js}',
     './components/**/*.{html,js}',],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        gray: colors.blueGray,
+        pink: colors.fuchsia,
+      }
+    },
   },
   plugins: [],
 }
