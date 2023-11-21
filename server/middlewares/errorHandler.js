@@ -12,6 +12,7 @@ const errorHandler = (err, req, res, next) => {
       res.status(400).json({ message: "Password is required" });
       break;
     case "UserNotFound":
+    case "InvalidToken":
       res.status(404).json({ message: "User Not Found" });
       break;
     case "WrongPassword":
@@ -19,6 +20,9 @@ const errorHandler = (err, req, res, next) => {
       break;
     case "WrongPasscode":
       res.status(400).json({ message: "Invalid passcode" });
+      break;
+    case "UserMustLogin":
+      res.status(400).json({ message: "Please login first" });
       break;
   }
 };
