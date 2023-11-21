@@ -14,7 +14,7 @@ export function Footer() {
           className="text-gray-500 no-underline hover:no-underline"
           href="/"
         >
-          Mystic
+          Mystic Group
         </a>
       </div>
     </>

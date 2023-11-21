@@ -18,14 +18,14 @@ export function Home() {
             {/*Left Col*/}
             <div className="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
               <h1 className="my-4 text-3xl md:text-5xl text-white opacity-75 font-bold leading-tight text-center md:text-left">
-                Add
+                Join
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500" style={{marginLeft: "15px", marginRight: "10px"}}>
                   Or Create
                 </span>
-                Your Games
+                Your Game
               </h1>
               <p className="leading-normal text-base md:text-2xl mb-8 text-center md:text-left text-indigo-400">
-                Let's enjoy the games together!
+                Let's enjoy the game together!
               </p>
               <form className="bg-gray-900 opacity-75 w-full shadow-lg rounded-lg px-8 pt-6 pb-8 mb-4">
                 <div className="mb-4">

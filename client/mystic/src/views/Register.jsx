@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export function Register() {
   return (
@@ -66,8 +67,8 @@ export function Register() {
           </div>
           <div className="w-full py-6 z-20">
             <div className="mb-8 flex flex-col items-center">
-              <h1 className="mb-2 text-2xl">Mystic Card</h1>
-              <span className="text-gray-300">Register and join our games</span>
+              <img src="icon.png" width={150} alt="ML Logo" />
+              <h1 className="mb-2 text-2xl capitalize">Register and join our games</h1>
             </div>
             <form action="" className="sm:w-2/3 w-full px-4 lg:px-0 mx-auto">
               <div className="mb-4 text-lg">
@@ -93,6 +94,9 @@ export function Register() {
                 >
                   Login
                 </button>
+              </div>
+              <div class="text-center text-purple-600 hover:underline hover:text-gray-100 py-5">
+                <Link to="/login">Already have an account?</Link>
               </div>
               <div className="p-4 text-center right-0 left-0 flex justify-center space-x-4 mt-16 lg:hidden ">
                 <a href="#">
