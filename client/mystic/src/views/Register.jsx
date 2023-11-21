@@ -111,8 +111,8 @@ export function Register() {
                 <input
                   onChange={inputHandler}
                   className="rounded-3xl border-none bg-purple-600 bg-opacity-50 px-6 py-2 text-center text-inherit placeholder-slate-200 shadow-lg outline-none backdrop-blur-md"
-                  type="text"
-                  name="name"
+                  type="email"
+                  name="email"
                   placeholder="name@mail.com"
                 />
               </div>
@@ -121,7 +121,7 @@ export function Register() {
                   onChange={inputHandler}
                   className="rounded-3xl border-none bg-purple-600 bg-opacity-50 px-6 py-2 text-center text-inherit placeholder-slate-200 shadow-lg outline-none backdrop-blur-md"
                   type="Password"
-                  name="name"
+                  name="password"
                   placeholder="*********"
                 />
               </div>
