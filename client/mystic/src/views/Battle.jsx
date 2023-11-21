@@ -11,6 +11,7 @@ export default function Battle() {
   const [player, setPlayer] = useState([])
   const [readyPlayer, setReadyPlayer] = useState(null)
   const [enemyStatus, setEnemyStatus] = useState(false)
+  const [yourStatus, setYourStatus] = useState(false)
   const [situation, setSituation] = useState(null)
 
   useEffect(() => {
@@ -58,6 +59,8 @@ export default function Battle() {
     if(readyPlayer) {
       if(readyPlayer.id !== localStorage.access_token) {
         setEnemyStatus(true)
+      } else {
+        setYourStatus(true)
       }
 
       if(player.length < 2) {
@@ -104,7 +107,7 @@ export default function Battle() {
           {cards && cards.map((card, i) => {
             return <Card key={card.id} card={card} index={i}/>
           })}
-          <button>Go!</button>
+          {yourStatus ? "" : <button>Go!</button>}
         </form>
       </div>
     </>
