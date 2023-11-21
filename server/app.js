@@ -7,6 +7,7 @@ const AuthController = require("./controllers/AuthController");
 const RoomController = require("./controllers/RoomController");
 const CardController = require("./controllers/CardController");
 const authentication = require("./middlewares/authentication");
+const errorHandler = require("./middlewares/errorHandler");
 const cors = require("cors");
 
 const app = express();
@@ -31,5 +32,8 @@ app.post("/room", RoomController.createRoom);
 
 // Assign 5 random cards to user
 app.get("/cards", CardController.randomCards);
+
+// Error handler
+app.use(errorHandler);
 
 module.exports = app;
