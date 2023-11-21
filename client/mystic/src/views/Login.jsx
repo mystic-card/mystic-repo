@@ -6,18 +6,13 @@ export function Login() {
       <div
         className="flex h-screen w-full items-center justify-center bg-gray-900 bg-cover bg-no-repeat"
         style={{
-          backgroundImage:
-            'url("/login.png")',
+          backgroundImage: 'url("/login.png")',
         }}
       >
         <div className="rounded-xl bg-gray-800 bg-opacity-50 px-16 py-10 shadow-lg backdrop-blur-md max-sm:px-8">
-          <div className="text-white"> 
+          <div className="text-white">
             <div className="mb-8 flex flex-col items-center">
-              <img
-                src="ml-logo.png"
-                width={150}
-                alt="ML Logo"
-              />
+              <img src="ml-logo.png" width={150} alt="ML Logo" />
               <h1 className="mb-2 text-2xl">Mystic Card</h1>
               <span className="text-gray-300">Enter Login Details</span>
             </div>
@@ -45,6 +40,9 @@ export function Login() {
                 >
                   Login
                 </button>
+              </div>
+              <div class="text-center text-gray-400 hover:underline hover:text-gray-100 py-5">
+                <a href="/register">Haven't an account?</a>
               </div>
             </form>
           </div>
