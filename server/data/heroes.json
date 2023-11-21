@@ -1,0 +1,332 @@
+[
+  {
+    "name": "Alucard",
+    "imageUrl": "https://media.suara.com/pictures/970x544/2022/10/10/41483-alucard-mobile-legends.jpg",
+    "role": "Fighter,Assassin",
+    "hero_specially": "Charge,Crowd Control"
+  },
+  {
+    "name": "Bruno",
+    "imageUrl": "https://cdn.oneesports.id/cdn-data/sites/2/2022/11/Mobile-Legends_Bruno-Halo-Striker_Cover.jpg",
+    "role": "Marksman",
+    "hero_specially": "Reap"
+  },
+  {
+    "name": "Fanny",
+    "imageUrl": "https://cdn.oneesports.gg/cdn-data/sites/2/2021/09/Fanny-MLBB.jpg",
+    "role": "Assassin",
+    "hero_specially": "Charge,Reap"
+  },
+  {
+    "name": "Lancelot",
+    "imageUrl": "https://esports.id/img/article/296020220127050733.jpg",
+    "role": "Assassin",
+    "hero_specially": "Charge,Burst Damage"
+  },
+  {
+    "name": "Claude",
+    "imageUrl": "https://cms.hybrid.co.id/wp-content/uploads/2022/07/c2068751bfd87c76151248ec3cf4383d_Claude_Basic.jpg",
+    "role": "Marksman",
+    "hero_specially": "Reap,Burst"
+  },
+  {
+    "name": "Clint",
+    "imageUrl": "https://cdn.vcgamers.com/news/wp-content/uploads/2022/02/hero-sidelane-terbaik-clint.jpg",
+    "role": "Marksman",
+    "hero_specially": "Reap"
+  },
+  {
+    "name": "Ling",
+    "imageUrl": "https://api.duniagames.co.id/api/content/upload/file/197411821669801790.jpg",
+    "role": "Assassin",
+    "hero_specially": "Reap,Burst Damage"
+  },
+  {
+    "name": "Granger",
+    "imageUrl": "https://api.duniagames.co.id/api/content/upload/file/5697969221691394304.jpg",
+    "role": "Marksman",
+    "hero_specially": "Reap,Burst Damage"
+  },
+  {
+    "name": "Hanabi",
+    "imageUrl": "https://media.hitekno.com/thumbs/2023/04/04/40766-hero-mobile-legends-hanabi/730x480-img-40766-hero-mobile-legends-hanabi.jpg",
+    "role": "Marksman",
+    "hero_specially": "Regen,Burst Damage"
+  },
+  {
+    "name": "Gusion",
+    "imageUrl": "https://cdn.idntimes.com/content-images/duniaku/post/20221121/build-gusion-tersakit-mobile-legends-2022-musuh-gak-berani-nongol-31aba433cc36651b51a5d5bb958bacd1.jpg",
+    "role": "Assassin",
+    "hero_specially": "Charge,Burst"
+  },
+  {
+    "name": "Irithel",
+    "imageUrl": "https://cms.hybrid.co.id/wp-content/uploads/2022/07/ca98cec310e4f96b27c605d4b7f61fd9_IMG_20211115_161717.jpg",
+    "role": "Marksman",
+    "hero_specially": "Reap"
+  },
+  {
+    "name": "Karrie",
+    "imageUrl": "https://media.hitekno.com/thumbs/2023/01/24/91783-hero-mobile-legends-karrie/730x480-img-91783-hero-mobile-legends-karrie.jpg",
+    "role": "Marksman",
+    "hero_specially": "Reap,Burst Damage"
+  },
+  {
+    "name": "Lesley",
+    "imageUrl": "https://cdn.vcgamers.com/news/wp-content/uploads/2022/02/hero-sidelane-terbaik-lesley.jpg",
+    "role": "Marksman,Assassin",
+    "hero_specially": "Reap,Burst Damage"
+  },
+  {
+    "name": "Kimmy",
+    "imageUrl": "https://static.upoint.id/images/news/1659466461buildkimmytersakit.jpg",
+    "role": "Marksman,Mage",
+    "hero_specially": "Damage,Poke"
+  },
+  {
+    "name": "Hanzo",
+    "imageUrl": "https://images.tokopedia.net/blog-tokopedia-com/uploads/2019/06/hanzo-1.jpg",
+    "role": "Assassin",
+    "hero_specially": "Reap,Burst"
+  },
+  {
+    "name": "Layla",
+    "imageUrl": "https://img.esportsku.com/wp-content/uploads//2023/06/Layla.jpg",
+    "role": "Marksman",
+    "hero_specially": "Reap"
+  },
+  {
+    "name": "Miya",
+    "imageUrl": "https://api.duniagames.co.id/api/content/upload/file/13147544081601110768.jpg",
+    "role": "Marksman",
+    "hero_specially": "Reap"
+  },
+  {
+    "name": "Hayabusa",
+    "imageUrl": "https://cdn.oneesports.id/cdn-data/sites/2/2021/11/MLBB_ShuraHayabusa.jpg",
+    "role": "Assassin",
+    "hero_specially": "Charge,Burst Damage"
+  },
+  {
+    "name": "Moskov",
+    "imageUrl": "https://d1tgyzt3mf06m9.cloudfront.net/v3-staging/2021/09/moskov-blood-spear-ml-mobile-legends-skin-uhdpaper-com-4-k-5-286851e72012-009b-4bcf-a41d-47444d571a91.jpg",
+    "role": "Marksman",
+    "hero_specially": "Push,Burst Damage"
+  },
+  {
+    "name": "Helcurt",
+    "imageUrl": "https://cdn.oneesports.id/cdn-data/sites/2/2021/12/Helcurt.jpg",
+    "role": "Assassin",
+    "hero_specially": "Charge,Burst Damage"
+  },
+  {
+    "name": "Roger",
+    "imageUrl": "https://dafunda.com/wp-content/uploads/2022/04/Kisah-Roger-Mobile-Legends-1.jpg",
+    "role": "Marksman,Fighter",
+    "hero_specially": "Reap,Burst Damage"
+  },
+  {
+    "name": "Yi Sun-shin",
+    "imageUrl": "https://media-assets-ggwp.s3.ap-southeast-1.amazonaws.com/2022/04/SampulBuildYiSunSin-640x360.jpg",
+    "role": "Marksman",
+    "hero_specially": "Poke,Reap"
+  },
+  {
+    "name": "Karina",
+    "imageUrl": "https://cdn.vcgamers.com/news/wp-content/uploads/2022/03/Karina-MLBB.jpg",
+    "role": "Mage,Assassin",
+    "hero_specially": "Charge,Reap"
+  },
+  {
+    "name": "Natalia",
+    "imageUrl": "https://dailyspin.id/wp-content/uploads/2021/01/Natalia-ML.jpg",
+    "role": "Assassin",
+    "hero_specially": "Charge,Burst Damage"
+  },
+  {
+    "name": "Angela",
+    "imageUrl": "https://cdn.oneesports.id/cdn-data/sites/2/2023/08/Angela.jpg",
+    "role": "Support",
+    "hero_specially": "Regen,Poke"
+  },
+  {
+    "name": "Lapu-Lapu",
+    "imageUrl": "https://superlive.id/storage/articles/24389d3e-085d-429a-9edb-268f98d4e596.jpg",
+    "role": "Assassin",
+    "hero_specially": "Charge,Burst Damage"
+  },
+  {
+    "name": "Saber",
+    "imageUrl": "https://api.duniagames.co.id/api/content/upload/file/14113816541589774554.jpg",
+    "role": "Assassin",
+    "hero_specially": "Charge,Reap"
+  },
+  {
+    "name": "Selena",
+    "imageUrl": "https://cdn.oneesports.gg/cdn-data/sites/2/2021/09/MLBB_STUNSelena.jpg",
+    "role": "Mage,Assassin",
+    "hero_specially": "Reap,Burst"
+  },
+  {
+    "name": "Zilong",
+    "imageUrl": "https://www.ligagame.tv/images/zilong-mlbb_1ce3d.jpg",
+    "role": "Fighter,Assassin",
+    "hero_specially": "Initiator,Charge"
+  },
+  {
+    "name": "Aurora",
+    "imageUrl": "https://www.blooing.com/wp-content/uploads/2020/10/how_to_use_aurora_mobile_legends_blooing.jpg",
+    "role": "Mage",
+    "hero_specially": "Crowd Control,Burst Damage"
+  },
+  {
+    "name": "Akai",
+    "imageUrl": "https://static.upoint.id/images/news/1636008335tipsjagomenggunakanheroakai.jpg",
+    "role": "Tank",
+    "hero_specially": "Charge,Crowd Control"
+  },
+  {
+    "name": "Alice",
+    "imageUrl": "https://cdn.vcgamers.com/news/wp-content/uploads/2022/01/alice-mobile-legends-cover2.jpg",
+    "role": "Mage",
+    "hero_specially": "Regen,Charge"
+  },
+  {
+    "name": "Chang`e",
+    "imageUrl": "https://cdn.vcgamers.com/news/wp-content/uploads/2022/01/Item-Build-Change-Tersakit-MLBB.jpg",
+    "role": "Mage",
+    "hero_specially": "Poke,Reap"
+  },
+  {
+    "name": "Estes",
+    "imageUrl": "https://cdn.vcgamers.com/news/wp-content/uploads/2022/02/hero-roamer-terbaik-estes.jpg",
+    "role": "Support",
+    "hero_specially": "Regen,Cost"
+  },
+  {
+    "name": "Cyclops",
+    "imageUrl": "https://media-assets-ggwp.s3.ap-southeast-1.amazonaws.com/2021/07/Build-Cyclops-Terbaik-0-640x360.jpg",
+    "role": "Mage",
+    "hero_specially": "Damage,Cost"
+  },
+  {
+    "name": "Eudora",
+    "imageUrl": "https://dafunda.com/wp-content/uploads/2022/06/kisah-eudora-mobile-legends.jpg",
+    "role": "Mage",
+    "hero_specially": "Damage,Reap"
+  },
+  {
+    "name": "Esmeralda",
+    "imageUrl": "https://static.upoint.id/images/news/301119104639tips-jago-pakai-hero-esmeralda-di-mobile-legends-dijamin-100-bisa.png",
+    "role": "Tank,Mage",
+    "hero_specially": "Charge,Burst Damage"
+  },
+  {
+    "name": "Balmond",
+    "imageUrl": "https://api.duniagames.co.id/api/content/upload/file/11249363551629798452.jpg",
+    "role": "Tank",
+    "hero_specially": "Charge,Crowd Control"
+  },
+  {
+    "name": "Gord",
+    "imageUrl": "https://gamedaim.com/wp-content/uploads/2022/01/Kata-kata-Gord-Mobile-Legends.jpg",
+    "role": "Mage",
+    "hero_specially": "Damage,Poke"
+  },
+  {
+    "name": "Guinevere",
+    "imageUrl": "https://dailyspin.id/wp-content/uploads/2022/09/Guinevere-Psion-of-Tomorrow.jpeg",
+    "role": "Mage,Fighter",
+    "hero_specially": "Charge,Burst Damage"
+  },
+  {
+    "name": "Harith",
+    "imageUrl": "https://cdn.vcgamers.com/news/wp-content/uploads/2022/01/Harith-Hero-Mage-MLBB-oke-4.jpg",
+    "role": "Mage",
+    "hero_specially": "Charge,Burst Damage"
+  },
+  {
+    "name": "Harley",
+    "imageUrl": "https://dafunda.com/wp-content/uploads/2022/06/Kisah-Harley-Mobile-Legends-1.jpg",
+    "role": "Mage",
+    "hero_specially": "Damage,Poke"
+  },
+  {
+    "name": "Belerick",
+    "imageUrl": "https://cdn.oneesports.gg/cdn-data/wp-content/uploads/2021/01/MobileLegends_Belerick_TheDeepOne.jpg",
+    "role": "Tank",
+    "hero_specially": "Regen,Poke"
+  },
+  {
+    "name": "Kadita",
+    "imageUrl": "https://img.esportsku.com/wp-content/uploads//2020/03/kadita-ml-1200x720.jpg",
+    "role": "Mage",
+    "hero_specially": "Charge,Burst"
+  },
+  {
+    "name": "Kagura",
+    "imageUrl": "https://api.duniagames.co.id/api/content/upload/file/14859478791671482650.jpg",
+    "role": "Mage",
+    "hero_specially": "Damage,Reap"
+  },
+  {
+    "name": "Baxia",
+    "imageUrl": "https://metroandalas.co.id/wp-content/uploads/2021/08/Kelebihan-Hero-Tank-Baxia.png",
+    "role": "Tank",
+    "hero_specially": "Initiator,Crowd Control"
+  },
+  {
+    "name": "Lunox",
+    "imageUrl": "https://c4.wallpaperflare.com/wallpaper/260/244/13/mobile-legends-lunox-cosmic-harmony-hd-wallpaper-preview.jpg",
+    "role": "Mage",
+    "hero_specially": "Damage,Poke"
+  },
+  {
+    "name": "Lylia",
+    "imageUrl": "https://i.pinimg.com/originals/ae/3b/c7/ae3bc7d573d4adea204e6e523fcfa46c.jpg",
+    "role": "Mage",
+    "hero_specially": "Push,Poke"
+  },
+  {
+    "name": "Franco",
+    "imageUrl": "https://cdn.oneesports.id/cdn-data/sites/2/2022/06/Mobile-Legends_Franco.jpg",
+    "role": "Tank",
+    "hero_specially": "Initiator"
+  },
+  {
+    "name": "Aldous",
+    "imageUrl": "https://cdn.oneesports.gg/cdn-data/sites/2/2021/08/MLBB_RealmWatcherAldous-612dc237a5b6f.jpg",
+    "role": "Fighter",
+    "hero_specially": "Push,Burst"
+  },
+  {
+    "name": "Nana",
+    "imageUrl": "https://cdn.oneesports.id/cdn-data/sites/2/2021/12/MLBB_AquaPuraNana.jpg",
+    "role": "Mage,Support",
+    "hero_specially": "Crowd Control,Reap"
+  },
+  {
+    "name": "Odette",
+    "imageUrl": "https://media.hitekno.com/thumbs/2022/12/02/69642-hero-mobile-legends-odette/730x480-img-69642-hero-mobile-legends-odette.jpg",
+    "role": "Mage",
+    "hero_specially": "Poke,Burst Damage"
+  },
+  {
+    "name": "Pharsa",
+    "imageUrl": "https://api.duniagames.co.id/api/content/upload/file/14099823941677051451.jpg",
+    "role": "Mage",
+    "hero_specially": "Damage,Poke"
+  },
+  {
+    "name": "Gatot kaca",
+    "imageUrl": "https://dailyspin.id/wp-content/uploads/2022/11/Gatotkaca.jpg",
+    "role": "Tank,Fighter",
+    "hero_specially": "Initiator,Crowd Control"
+  },
+  {
+    "name": "Vale",
+    "imageUrl": "https://cdn.oneesports.id/cdn-data/sites/2/2022/05/Mobile-Legends_Supernal-Tempest-Vale_Skin-Collector-2.jpg",
+    "role": "Mage",
+    "hero_specially": "Poke,Burst"
+  }
+]
