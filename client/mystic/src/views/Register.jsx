@@ -1,7 +1,37 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import axios from "axios";
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 export function Register() {
+  const navigate = useNavigate();
+  const [inputForm, setInputForm] = useState({ email: "", password: "" });
+
+  const inputHandler = (event) => {
+    const { value, name } = event.target;
+    setInputForm({ ...inputForm, [name]: value });
+  };
+
+  const submitHandler = async (event) => {
+    event.preventDefault();
+    try {
+      const { data } = await axios.post(
+        "http://34.142.244.149/register",
+        inputForm
+      );
+
+      Swal.fire({
+        title: "Success register!",
+        icon: "success",
+      });
+      navigate("/login");
+    } catch (error) {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: error.response.data.message,
+      });
+    }
+  };
   return (
     <>
       <section className="min-h-screen flex items-stretch text-white ">
@@ -68,11 +98,17 @@ export function Register() {
           <div className="w-full py-6 z-20">
             <div className="mb-8 flex flex-col items-center">
               <img src="icon.png" width={150} alt="ML Logo" />
-              <h1 className="mb-2 text-2xl capitalize">Register and join our games</h1>
+              <h1 className="mb-2 text-2xl capitalize">
+                Register and join our games
+              </h1>
             </div>
-            <form action="" className="sm:w-2/3 w-full px-4 lg:px-0 mx-auto">
+            <form
+              onSubmit={submitHandler}
+              className="sm:w-2/3 w-full px-4 lg:px-0 mx-auto"
+            >
               <div className="mb-4 text-lg">
                 <input
+                  onChange={inputHandler}
                   className="rounded-3xl border-none bg-purple-600 bg-opacity-50 px-6 py-2 text-center text-inherit placeholder-slate-200 shadow-lg outline-none backdrop-blur-md"
                   type="text"
                   name="name"
@@ -81,6 +117,7 @@ export function Register() {
               </div>
               <div className="mb-4 text-lg">
                 <input
+                  onChange={inputHandler}
                   className="rounded-3xl border-none bg-purple-600 bg-opacity-50 px-6 py-2 text-center text-inherit placeholder-slate-200 shadow-lg outline-none backdrop-blur-md"
                   type="Password"
                   name="name"
