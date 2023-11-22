@@ -1,5 +1,6 @@
 const server = require('./bin/www')
 const { Server } = require('socket.io')
+const { Room } = require('./models/index')
 
 const io = new Server(server, {
   cors: {
@@ -17,6 +18,13 @@ io.on("connection", (socket) => {
   })
   socket.on("CLIENT_ROOM_BATTLE", (room) => {
     socket.join(room)
+    Room.update({
+      status: "started"
+    }, {
+      where: {
+        passcode: room
+      }
+    })
   })
   socket.on("CLIENT_SET_PLAYER", (player) => {
     io.to(player.coderoom).emit("SERVER_SET_PLAYER", player)
