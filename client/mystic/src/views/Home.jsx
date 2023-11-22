@@ -56,7 +56,7 @@ export function Home() {
   return (
     <>
       <div
-        className="flex h-screen w-full items-center justify-center bg-gray-900 bg-cover bg-no-repeat leading-normal tracking-normal bg-cover"
+        className="flex h-screen w-full items-center justify-center bg-gray-900 bg-cover bg-no-repeat leading-normal tracking-normal"
         style={{ backgroundImage: 'url("header.png")' }}
       >
         <div className="h-full">
