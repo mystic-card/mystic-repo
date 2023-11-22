@@ -17,10 +17,10 @@ export default function Card({ card, index }) {
           </div>
           <div className="p-6">
             <div className="flex items-center mb-2">
-              <p className="flex-1 text-left leading-5 font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-900">
+              <p className="flex-1 text-left font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-900">
                 {card?.name}
               </p>
-              <p className="flex-1 text-right leading-5 font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-900">
+              <p className="flex-1 text-right font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-900">
                 {card?.role.replace(",", ", ")}
               </p>
             </div>
