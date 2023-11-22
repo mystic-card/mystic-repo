@@ -8,14 +8,24 @@ const io = new Server(server, {
 })
 
 io.on("connection", (socket) => {
+  socket.on("CLIENT_ROOM_JOIN", (room) => {
+    socket.join(room)
+  })
+  socket.on("CLIENT_ROOM_JOINED", (room) => {
+    socket.join(room)
+    socket.broadcast.to(room).emit("SERVER_ROOM_JOIN", true)
+  })
+  socket.on("CLIENT_ROOM_BATTLE", (room) => {
+    socket.join(room)
+  })
   socket.on("CLIENT_SET_PLAYER", (player) => {
-    io.emit("SERVER_SET_PLAYER", player)
+    io.to(player.coderoom).emit("SERVER_SET_PLAYER", player)
   })
   socket.on("CLIENT_BATTLE", (battle) => {
     let power_1 = 0
     let power_2 = 0
 
-    battle[0].cards.forEach(power => {
+    battle.player[0].cards.forEach(power => {
       if(power.operator === true) {
         power_1 += power.power
       } else {
@@ -23,7 +33,7 @@ io.on("connection", (socket) => {
       }
     })
 
-    battle[1].cards.forEach(power => {
+    battle.player[1].cards.forEach(power => {
       if(power.operator === true) {
         power_2 += power.power
       } else {
@@ -38,6 +48,6 @@ io.on("connection", (socket) => {
       situation = "lose"
     }
 
-    io.emit("SERVER_RESULT", {id: battle[0].id, situation})
+    io.to(battle.coderoom).emit("SERVER_RESULT", {id: battle.player[0].id, situation})
   })
 })
