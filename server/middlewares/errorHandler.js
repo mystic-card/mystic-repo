@@ -27,6 +27,9 @@ const errorHandler = (err, req, res, next) => {
     case "RoomNotFound":
       res.status(404).json({ message: "Room Not Found" });
       break;
+    case "RoomUnavailable":
+      res.status(404).json({ message: "Room Already Started" })
+      break
   }
 };
 

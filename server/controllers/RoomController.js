@@ -31,6 +31,10 @@ class RoomController {
       if(!data) {
         throw { name: "RoomNotFound" };
       }
+
+      if(data.status === "started") {
+        throw { name: "RoomUnavailable" }
+      }
       
       res.status(200).json(data);
     } catch (error) {
