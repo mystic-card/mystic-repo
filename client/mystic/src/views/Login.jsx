@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import Swal from "sweetalert2";
@@ -37,7 +37,7 @@ export function Login() {
   return (
     <>
       <div
-        className="flex h-screen w-full items-center justify-center bg-gray-900 bg-cover bg-no-repeat"
+        className="flex h-screen w-full items-center justify-center bg-gray-900 bg-cover bg-no-repeat bg-center"
         style={{
           backgroundImage: 'url("/login.png")',
         }}
@@ -77,7 +77,7 @@ export function Login() {
                 </button>
               </div>
               <div className="text-center text-gray-400 hover:underline hover:text-gray-100 py-5">
-                <Link to="/register">Haven't an account?</Link>
+                <Link to="/register">Haven&apos;t an account?</Link>
               </div>
             </form>
           </div>

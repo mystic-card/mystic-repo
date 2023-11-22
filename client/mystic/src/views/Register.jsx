@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 
@@ -15,7 +15,7 @@ export function Register() {
   const submitHandler = async (event) => {
     event.preventDefault();
     try {
-      const { data } = await axios.post(
+      await axios.post(
         "http://34.142.244.149/register",
         inputForm
       );
@@ -35,7 +35,7 @@ export function Register() {
   };
   return (
     <>
-      <section className="min-h-screen flex items-stretch text-white ">
+      <section className="min-h-screen flex items-stretch text-white">
         <div
           className="lg:flex w-1/2 hidden bg-gray-500 bg-no-repeat bg-cover relative items-center"
           style={{
@@ -89,7 +89,7 @@ export function Register() {
         </div>
         <div className="lg:w-1/2 w-full flex items-center justify-center text-center md:px-16 px-0 z-0 bg-purple-400">
           <div
-            className="absolute lg:hidden z-10 inset-0 bg-purple-600 bg-no-repeat bg-cover items-center"
+            className="absolute lg:hidden z-10 inset-0 bg-purple-600 bg-no-repeat bg-cover items-center bg-center"
             style={{
               backgroundImage: "url(/Miya.jpg)",
             }}
@@ -133,7 +133,7 @@ export function Register() {
                   Sign In
                 </button>
               </div>
-              <div class="text-center text-purple-600 hover:underline hover:text-gray-100 py-5">
+              <div className="text-center text-purple-600 hover:underline hover:text-gray-100 py-5">
                 <Link to="/login">Already have an account?</Link>
               </div>
               <div className="p-4 text-center right-0 left-0 flex justify-center space-x-4 mt-16 lg:hidden ">
