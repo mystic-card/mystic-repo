@@ -1,12 +1,35 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { Loading } from "../components/Loading";
 import useSound from "use-sound";
 import WSound from "../sound/w-sound.mp3"
+import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
+import { io } from 'socket.io-client'
+const socket = io('http://localhost:3000')
 
 export function WaitingRoom() {
   const [sound] = useSound(WSound);
+  const coderoom = useSelector((state) => state.setCoderoom.coderoom)
+  const navigate = useNavigate()
 
   sound()
+
+  useEffect(() => {
+    if(!coderoom) {
+      navigate("/")
+    } else {
+      socket.emit("CLIENT_ROOM_JOIN", coderoom)
+    }
+  }, [])
+
+  useEffect(() => {
+    socket.on("SERVER_ROOM_JOIN", (server_room_join) => {
+      if(server_room_join) {
+        navigate('/room')
+      }
+    })
+  }, [socket])
 
   return (
     <>
@@ -19,10 +42,10 @@ export function WaitingRoom() {
         <div className="rounded-xl bg-gray-800 bg-opacity-50 px-16 shadow-lg backdrop-blur-md max-sm:px-8 text-white py-5 mb-3 uppercase">
           <p>The battle begin!!</p>
         </div>
-        <div className="rounded-xl bg-gray-800 bg-opacity-50 px-16 shadow-lg backdrop-blur-md max-sm:px-8 py-5 mb-40 uppercase">
-          <p className="text-white font-medium">room pin:</p>
+        <div className="rounded-xl bg-gray-800 bg-opacity-50 px-16 shadow-lg backdrop-blur-md max-sm:px-8 py-5 mb-40">
+          <p className="text-white font-medium uppercase">room pin:</p>
           <p className="text-orange-800 text-center text-lg font-extrabold">
-            1234
+            {coderoom}
           </p>
         </div>
 
