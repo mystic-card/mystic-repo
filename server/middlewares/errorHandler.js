@@ -24,6 +24,9 @@ const errorHandler = (err, req, res, next) => {
     case "UserMustLogin":
       res.status(400).json({ message: "Please login first" });
       break;
+    case "RoomNotFound":
+      res.status(404).json({ message: "Room Not Found" });
+      break;
   }
 };
 

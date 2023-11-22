@@ -27,6 +27,11 @@ class RoomController {
       const data = await Room.findOne({
         where: { passcode },
       });
+
+      if(!data) {
+        throw { name: "RoomNotFound" };
+      }
+      
       res.status(200).json(data);
     } catch (error) {
       console.log(error);
