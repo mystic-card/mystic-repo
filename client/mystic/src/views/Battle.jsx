@@ -51,6 +51,19 @@ export default function Battle() {
     })
     socket.on("SERVER_RESULT", (server_result) => {
       if(server_result.id === localStorage.access_token) {
+        Swal.fire({
+          title: "Congratulation your the winner!",
+          width: 600,
+          padding: "3em",
+          color: "#716add",
+          background: "#fff url(https://sweetalert2.github.io/images/trees.png)",
+          backdrop: `
+            rgba(0,0,123,0.4)
+            url("/won.gif")
+            center top
+            no-repeat
+          `
+        });
         setSituation(server_result.situation)
       } else {
         if(server_result.situation === "lose") {
