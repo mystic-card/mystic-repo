@@ -1,4 +1,3 @@
-import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 
@@ -37,7 +36,6 @@ export function Navbar() {
               <img
                 src="/logout.png"
                 className="fill-current h-6"
-                viewBox="0 0 32 32"
               />
             </Link>
           </div>
