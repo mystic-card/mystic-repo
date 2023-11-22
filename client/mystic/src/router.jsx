@@ -3,6 +3,7 @@ import { Login } from "./views/Login";
 import { Register } from "./views/Register";
 import { Home } from "./views/Home";
 import Battle from "./views/Battle"
+import { WaitingRoom } from "./views/WaitingRoom";
 
 function loginChecked() {
   if (!localStorage.access_token) {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
     path: "/room",
     element: <Battle />,
     loader: loginChecked
+  },
+  {
+    path: "/waiting",
+    element: <WaitingRoom />
   }
 ]);
 
