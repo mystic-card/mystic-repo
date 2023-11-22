@@ -29,6 +29,9 @@ app.use(authentication);
 // User create game room
 app.post("/room", RoomController.createRoom);
 
+// Get room by ID
+app.get("/room", RoomController.getRoomById);
+
 // Assign 5 random cards to user
 app.get("/cards", CardController.randomCards);
 
