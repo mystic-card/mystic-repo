@@ -22,7 +22,7 @@ class RoomController {
 
   static async getRoomById(req, res, next) {
     try {
-      const { passcode } = req.body;
+      const { passcode } = req.params;
       // console.log(req.body + " <<<<<<");
       const data = await Room.findOne({
         where: { passcode },

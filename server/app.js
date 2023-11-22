@@ -31,7 +31,7 @@ app.use(authentication);
 app.post("/room", RoomController.createRoom);
 
 // Get room by ID
-app.get("/room", RoomController.getRoomById);
+app.get("/room/:passcode", RoomController.getRoomById);
 
 // Assign 5 random cards to user
 app.get("/cards", CardController.randomCards);
