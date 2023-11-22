@@ -7,7 +7,7 @@ export default function Card({ card, index }) {
 
   return (
     <>
-      <div className={`${choosen ? "-translate-y-10" : ""} relative flex flex-col text-gray-700 bg-white rounded-xl bg-clip-border transition-all hover:-translate-y-10 shadow-lg shadow-blue-gray-900/50 w-48 hover:z-10`}>
+      <div className={`${choosen ? "-translate-y-10" : ""} relative flex flex-col text-gray-700 bg-white rounded-xl sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 bg-clip-border transition-all hover:-translate-y-10 shadow-lg shadow-blue-gray-900/50 w-48 hover:z-10`}>
         <input type="checkbox" className="select-card" id={`card-${index}`} onChange={() => {
           choosen === true ? setChoosen(false) : setChoosen(true)
         }}/>
