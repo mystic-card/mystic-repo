@@ -1,7 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { Loading } from "../components/Loading";
-import useSound from "use-sound";
-import WSound from "../sound/w-sound.mp3"
+
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
@@ -9,11 +8,8 @@ import { io } from 'socket.io-client'
 const socket = io('http://localhost:3000')
 
 export function WaitingRoom() {
-  const [sound] = useSound(WSound);
   const coderoom = useSelector((state) => state.setCoderoom.coderoom)
   const navigate = useNavigate()
-
-  sound()
 
   useEffect(() => {
     if(!coderoom) {
