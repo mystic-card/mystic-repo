@@ -40,7 +40,7 @@ export function WaitingRoom() {
         </div>
         <div className="rounded-xl bg-gray-800 bg-opacity-50 px-16 shadow-lg backdrop-blur-md max-sm:px-8 py-5 mb-40">
           <p className="text-white font-medium uppercase">room pin:</p>
-          <p className="text-orange-800 text-center text-lg font-extrabold">
+          <p className="text-white text-center text-lg font-extrabold underline">
             {coderoom}
           </p>
         </div>
