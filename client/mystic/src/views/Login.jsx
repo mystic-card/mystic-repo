@@ -16,7 +16,7 @@ export function Login() {
     event.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://34.142.244.149/login",
+        "https://mystic-card-server.nokatotedo.my.id/login",
         inputForm
       );
 

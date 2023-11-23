@@ -6,7 +6,7 @@ import Swal from "sweetalert2";
 import { useDispatch } from "react-redux";
 import { setCoderoom } from "../store/coderoom";
 import { io } from 'socket.io-client'
-const socket = io('http://localhost:3000')
+const socket = io('https://mystic-card-server.nokatotedo.my.id')
 
 export function Home() {
   const dispatch = useDispatch()
@@ -16,7 +16,7 @@ export function Home() {
     try {
       const { data } = await axios({
         method: "POST",
-        url: "http://localhost:3000/room",
+        url: "https://mystic-card-server.nokatotedo.my.id/room",
         headers: {
           Authorization: "Bearer " + localStorage.access_token
         }
@@ -35,7 +35,7 @@ export function Home() {
   async function joinRoom(input) {
     try {
       const { data } = await axios({
-        url: `http://localhost:3000/room/${input}`,
+        url: `https://mystic-card-server.nokatotedo.my.id/room/${input}`,
         headers: {
           Authorization: "Bearer " + localStorage.access_token
         }
