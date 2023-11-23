@@ -2,7 +2,7 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react'
 import { io } from 'socket.io-client'
-const socket = io('http://localhost:3000')
+const socket = io('https://mystic-card-server.nokatotedo.my.id')
 import Swal from "sweetalert2";
 import Card from '../components/Card';
 import { useSelector } from 'react-redux';
@@ -34,7 +34,7 @@ export default function Battle() {
   async function getCard() {
     try {
       const { data } = await axios({
-        url: 'http://localhost:3000/cards',
+        url: 'https://mystic-card-server.nokatotedo.my.id/cards',
         headers: {
           Authorization: "Bearer " + localStorage.access_token
         }

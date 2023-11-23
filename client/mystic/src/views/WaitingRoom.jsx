@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { io } from 'socket.io-client'
-const socket = io('http://localhost:3000')
+const socket = io('https://mystic-card-server.nokatotedo.my.id')
 
 export function WaitingRoom() {
   const coderoom = useSelector((state) => state.setCoderoom.coderoom)

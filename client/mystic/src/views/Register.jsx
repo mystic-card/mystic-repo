@@ -16,7 +16,7 @@ export function Register() {
     event.preventDefault();
     try {
       await axios.post(
-        "http://34.142.244.149/register",
+        "https://mystic-card-server.nokatotedo.my.id/register",
         inputForm
       );
 
